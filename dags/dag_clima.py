@@ -63,9 +63,12 @@ task_3 = PythonOperator(
 )
 
 task_4 = PythonOperator(
-    task_id="enviar_mail",
+    task_id='enviar_mail',
     python_callable=enviar_mail,
+   # op_args=["{{ ds }} {{ execution_date.hour }}"],
+    dag=BC_dag,
 )
+
 
 
 # Definicion orden de tareas

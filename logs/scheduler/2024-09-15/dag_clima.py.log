@@ -4955,3 +4955,751 @@ airflow.exceptions.AirflowException: DAG is missing the start_date parameter
 [2024-09-15 17:53:38,557] {logging_mixin.py:115} INFO - [2024-09-15 17:53:38,556] {dag.py:2420} INFO - Sync 1 DAGs
 [2024-09-15 17:53:38,590] {logging_mixin.py:115} INFO - [2024-09-15 17:53:38,590] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
 [2024-09-15 17:53:38,609] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.646 seconds
+[2024-09-15 20:18:11,572] {processor.py:153} INFO - Started process (PID=173) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:11,573] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:18:11,574] {logging_mixin.py:115} INFO - [2024-09-15 20:18:11,573] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:13,028] {logging_mixin.py:115} INFO - [2024-09-15 20:18:13,025] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:18:13,028] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:13,045] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 1.475 seconds
+[2024-09-15 20:18:23,143] {processor.py:153} INFO - Started process (PID=179) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:23,145] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:18:23,146] {logging_mixin.py:115} INFO - [2024-09-15 20:18:23,146] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:24,810] {logging_mixin.py:115} INFO - [2024-09-15 20:18:24,807] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:18:24,811] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:24,834] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 1.697 seconds
+[2024-09-15 20:18:34,968] {processor.py:153} INFO - Started process (PID=185) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:34,969] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:18:34,970] {logging_mixin.py:115} INFO - [2024-09-15 20:18:34,970] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:35,372] {logging_mixin.py:115} INFO - [2024-09-15 20:18:35,369] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:18:35,373] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:35,390] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.424 seconds
+[2024-09-15 20:18:45,533] {processor.py:153} INFO - Started process (PID=191) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:45,535] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:18:45,536] {logging_mixin.py:115} INFO - [2024-09-15 20:18:45,536] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:46,015] {logging_mixin.py:115} INFO - [2024-09-15 20:18:46,012] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:18:46,017] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:46,033] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.502 seconds
+[2024-09-15 20:18:56,148] {processor.py:153} INFO - Started process (PID=197) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:56,150] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:18:56,151] {logging_mixin.py:115} INFO - [2024-09-15 20:18:56,151] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:56,579] {logging_mixin.py:115} INFO - [2024-09-15 20:18:56,576] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:18:56,579] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:18:56,595] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.450 seconds
+[2024-09-15 20:19:06,698] {processor.py:153} INFO - Started process (PID=203) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:06,698] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:19:06,699] {logging_mixin.py:115} INFO - [2024-09-15 20:19:06,699] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:07,180] {logging_mixin.py:115} INFO - [2024-09-15 20:19:07,167] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:19:07,181] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:07,210] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.516 seconds
+[2024-09-15 20:19:17,281] {processor.py:153} INFO - Started process (PID=209) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:17,282] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:19:17,284] {logging_mixin.py:115} INFO - [2024-09-15 20:19:17,283] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:17,725] {logging_mixin.py:115} INFO - [2024-09-15 20:19:17,723] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:19:17,726] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:17,743] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.465 seconds
+[2024-09-15 20:19:27,860] {processor.py:153} INFO - Started process (PID=215) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:27,861] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:19:27,862] {logging_mixin.py:115} INFO - [2024-09-15 20:19:27,862] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:28,368] {logging_mixin.py:115} INFO - [2024-09-15 20:19:28,364] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:19:28,368] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:28,385] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.528 seconds
+[2024-09-15 20:19:38,490] {processor.py:153} INFO - Started process (PID=221) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:38,492] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:19:38,493] {logging_mixin.py:115} INFO - [2024-09-15 20:19:38,493] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:39,067] {logging_mixin.py:115} INFO - [2024-09-15 20:19:39,056] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:19:39,068] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:39,089] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.602 seconds
+[2024-09-15 20:19:49,216] {processor.py:153} INFO - Started process (PID=227) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:49,217] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:19:49,218] {logging_mixin.py:115} INFO - [2024-09-15 20:19:49,218] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:49,687] {logging_mixin.py:115} INFO - [2024-09-15 20:19:49,685] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:19:49,688] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:49,704] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.493 seconds
+[2024-09-15 20:19:59,801] {processor.py:153} INFO - Started process (PID=233) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:19:59,803] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:19:59,804] {logging_mixin.py:115} INFO - [2024-09-15 20:19:59,804] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:00,360] {logging_mixin.py:115} INFO - [2024-09-15 20:20:00,348] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:20:00,361] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:00,385] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.588 seconds
+[2024-09-15 20:20:10,480] {processor.py:153} INFO - Started process (PID=239) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:10,481] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:20:10,482] {logging_mixin.py:115} INFO - [2024-09-15 20:20:10,482] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:10,932] {logging_mixin.py:115} INFO - [2024-09-15 20:20:10,929] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:20:10,932] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:10,947] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.470 seconds
+[2024-09-15 20:20:21,029] {processor.py:153} INFO - Started process (PID=245) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:21,030] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:20:21,031] {logging_mixin.py:115} INFO - [2024-09-15 20:20:21,031] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:21,484] {logging_mixin.py:115} INFO - [2024-09-15 20:20:21,476] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:20:21,485] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:21,506] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.482 seconds
+[2024-09-15 20:20:31,604] {processor.py:153} INFO - Started process (PID=251) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:31,605] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:20:31,607] {logging_mixin.py:115} INFO - [2024-09-15 20:20:31,607] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:32,105] {logging_mixin.py:115} INFO - [2024-09-15 20:20:32,101] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:20:32,106] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:32,125] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.526 seconds
+[2024-09-15 20:20:42,221] {processor.py:153} INFO - Started process (PID=257) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:42,223] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:20:42,225] {logging_mixin.py:115} INFO - [2024-09-15 20:20:42,224] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:42,764] {logging_mixin.py:115} INFO - [2024-09-15 20:20:42,752] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:20:42,765] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:42,786] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.570 seconds
+[2024-09-15 20:20:52,905] {processor.py:153} INFO - Started process (PID=263) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:52,906] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:20:52,907] {logging_mixin.py:115} INFO - [2024-09-15 20:20:52,907] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:53,353] {logging_mixin.py:115} INFO - [2024-09-15 20:20:53,351] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:20:53,354] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:20:53,370] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.468 seconds
+[2024-09-15 20:21:03,476] {processor.py:153} INFO - Started process (PID=269) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:03,477] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:21:03,478] {logging_mixin.py:115} INFO - [2024-09-15 20:21:03,478] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:04,039] {logging_mixin.py:115} INFO - [2024-09-15 20:21:04,028] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:21:04,039] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:04,059] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.588 seconds
+[2024-09-15 20:21:14,160] {processor.py:153} INFO - Started process (PID=275) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:14,162] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:21:14,163] {logging_mixin.py:115} INFO - [2024-09-15 20:21:14,163] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:14,672] {logging_mixin.py:115} INFO - [2024-09-15 20:21:14,664] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:21:14,674] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:14,702] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.545 seconds
+[2024-09-15 20:21:24,794] {processor.py:153} INFO - Started process (PID=281) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:24,795] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:21:24,796] {logging_mixin.py:115} INFO - [2024-09-15 20:21:24,796] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:25,209] {logging_mixin.py:115} INFO - [2024-09-15 20:21:25,205] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:21:25,209] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:25,228] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.438 seconds
+[2024-09-15 20:21:35,341] {processor.py:153} INFO - Started process (PID=287) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:35,342] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:21:35,343] {logging_mixin.py:115} INFO - [2024-09-15 20:21:35,343] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:35,790] {logging_mixin.py:115} INFO - [2024-09-15 20:21:35,787] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:21:35,791] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:35,806] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.469 seconds
+[2024-09-15 20:21:45,918] {processor.py:153} INFO - Started process (PID=293) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:45,919] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:21:45,921] {logging_mixin.py:115} INFO - [2024-09-15 20:21:45,920] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:46,478] {logging_mixin.py:115} INFO - [2024-09-15 20:21:46,471] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:21:46,480] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:46,502] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.590 seconds
+[2024-09-15 20:21:56,611] {processor.py:153} INFO - Started process (PID=299) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:56,612] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:21:56,614] {logging_mixin.py:115} INFO - [2024-09-15 20:21:56,614] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:57,150] {logging_mixin.py:115} INFO - [2024-09-15 20:21:57,139] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:21:57,151] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:21:57,172] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.564 seconds
+[2024-09-15 20:22:07,289] {processor.py:153} INFO - Started process (PID=305) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:07,290] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:22:07,291] {logging_mixin.py:115} INFO - [2024-09-15 20:22:07,291] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:07,805] {logging_mixin.py:115} INFO - [2024-09-15 20:22:07,791] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:22:07,806] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:07,827] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.541 seconds
+[2024-09-15 20:22:17,938] {processor.py:153} INFO - Started process (PID=311) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:17,939] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:22:17,940] {logging_mixin.py:115} INFO - [2024-09-15 20:22:17,940] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:18,437] {logging_mixin.py:115} INFO - [2024-09-15 20:22:18,427] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:22:18,438] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:18,460] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.525 seconds
+[2024-09-15 20:22:28,562] {processor.py:153} INFO - Started process (PID=317) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:28,563] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:22:28,564] {logging_mixin.py:115} INFO - [2024-09-15 20:22:28,564] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:29,041] {logging_mixin.py:115} INFO - [2024-09-15 20:22:29,037] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 72, in <module>
+    task_1 >> task_2 >> task_3 >> task_4
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 80, in __rshift__
+    self.set_downstream(other)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 233, in set_downstream
+    self._set_relatives(task_or_task_list, upstream=False, edge_modifier=edge_modifier)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskmixin.py", line 214, in _set_relatives
+    dag.add_task(task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-09-15 20:22:29,041] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:29,061] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.503 seconds
+[2024-09-15 20:22:37,047] {processor.py:153} INFO - Started process (PID=323) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:37,048] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:22:37,049] {logging_mixin.py:115} INFO - [2024-09-15 20:22:37,049] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:37,510] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:37,537] {logging_mixin.py:115} INFO - [2024-09-15 20:22:37,536] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:22:37,558] {logging_mixin.py:115} INFO - [2024-09-15 20:22:37,558] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:22:37,583] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.538 seconds
+[2024-09-15 20:22:47,692] {processor.py:153} INFO - Started process (PID=329) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:47,693] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:22:47,695] {logging_mixin.py:115} INFO - [2024-09-15 20:22:47,695] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:48,256] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:48,280] {logging_mixin.py:115} INFO - [2024-09-15 20:22:48,280] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:22:48,303] {logging_mixin.py:115} INFO - [2024-09-15 20:22:48,303] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:22:48,318] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.630 seconds
+[2024-09-15 20:22:58,418] {processor.py:153} INFO - Started process (PID=335) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:58,419] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:22:58,420] {logging_mixin.py:115} INFO - [2024-09-15 20:22:58,420] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:58,842] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:22:58,863] {logging_mixin.py:115} INFO - [2024-09-15 20:22:58,863] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:22:58,886] {logging_mixin.py:115} INFO - [2024-09-15 20:22:58,886] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:22:58,906] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.492 seconds
+[2024-09-15 20:23:08,482] {processor.py:153} INFO - Started process (PID=341) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:08,483] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:23:08,485] {logging_mixin.py:115} INFO - [2024-09-15 20:23:08,485] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:09,031] {logging_mixin.py:115} INFO - [2024-09-15 20:23:09,028] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 69, in <module>
+    dag=BC_dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 764, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 210, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'cargar_data' has already been added to the DAG
+[2024-09-15 20:23:09,031] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:09,055] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.577 seconds
+[2024-09-15 20:23:19,549] {processor.py:153} INFO - Started process (PID=347) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:19,550] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:23:19,551] {logging_mixin.py:115} INFO - [2024-09-15 20:23:19,551] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:19,972] {logging_mixin.py:115} INFO - [2024-09-15 20:23:19,969] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 69, in <module>
+    dag=BC_dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 764, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 210, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'cargar_data' has already been added to the DAG
+[2024-09-15 20:23:19,972] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:19,986] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.440 seconds
+[2024-09-15 20:23:30,102] {processor.py:153} INFO - Started process (PID=353) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:30,104] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:23:30,106] {logging_mixin.py:115} INFO - [2024-09-15 20:23:30,106] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:30,654] {logging_mixin.py:115} INFO - [2024-09-15 20:23:30,644] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/dag_clima.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_clima.py", line 69, in <module>
+    dag=BC_dag,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 764, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 210, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'cargar_data' has already been added to the DAG
+[2024-09-15 20:23:30,656] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:30,683] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.586 seconds
+[2024-09-15 20:23:35,772] {processor.py:153} INFO - Started process (PID=359) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:35,773] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:23:35,774] {logging_mixin.py:115} INFO - [2024-09-15 20:23:35,774] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:36,315] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:36,388] {logging_mixin.py:115} INFO - [2024-09-15 20:23:36,387] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:23:36,417] {logging_mixin.py:115} INFO - [2024-09-15 20:23:36,416] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:23:36,451] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.683 seconds
+[2024-09-15 20:23:46,560] {processor.py:153} INFO - Started process (PID=365) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:46,562] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:23:46,563] {logging_mixin.py:115} INFO - [2024-09-15 20:23:46,563] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:47,021] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:47,033] {logging_mixin.py:115} INFO - [2024-09-15 20:23:47,033] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:23:47,055] {logging_mixin.py:115} INFO - [2024-09-15 20:23:47,055] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:23:47,070] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.513 seconds
+[2024-09-15 20:23:57,178] {processor.py:153} INFO - Started process (PID=371) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:57,179] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:23:57,180] {logging_mixin.py:115} INFO - [2024-09-15 20:23:57,180] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:57,659] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:23:57,668] {logging_mixin.py:115} INFO - [2024-09-15 20:23:57,668] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:23:57,690] {logging_mixin.py:115} INFO - [2024-09-15 20:23:57,690] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:23:57,708] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.533 seconds
+[2024-09-15 20:24:07,792] {processor.py:153} INFO - Started process (PID=377) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:07,793] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:24:07,794] {logging_mixin.py:115} INFO - [2024-09-15 20:24:07,794] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:08,283] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:08,302] {logging_mixin.py:115} INFO - [2024-09-15 20:24:08,302] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:24:08,323] {logging_mixin.py:115} INFO - [2024-09-15 20:24:08,323] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:24:08,339] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.551 seconds
+[2024-09-15 20:24:18,449] {processor.py:153} INFO - Started process (PID=383) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:18,450] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:24:18,452] {logging_mixin.py:115} INFO - [2024-09-15 20:24:18,452] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:18,933] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:18,952] {logging_mixin.py:115} INFO - [2024-09-15 20:24:18,951] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:24:18,974] {logging_mixin.py:115} INFO - [2024-09-15 20:24:18,974] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:24:18,992] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.546 seconds
+[2024-09-15 20:24:29,117] {processor.py:153} INFO - Started process (PID=389) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:29,118] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:24:29,120] {logging_mixin.py:115} INFO - [2024-09-15 20:24:29,119] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:29,705] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:29,729] {logging_mixin.py:115} INFO - [2024-09-15 20:24:29,729] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:24:29,752] {logging_mixin.py:115} INFO - [2024-09-15 20:24:29,752] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:24:29,770] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.660 seconds
+[2024-09-15 20:24:39,866] {processor.py:153} INFO - Started process (PID=395) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:39,867] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:24:39,868] {logging_mixin.py:115} INFO - [2024-09-15 20:24:39,868] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:40,401] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:40,425] {logging_mixin.py:115} INFO - [2024-09-15 20:24:40,425] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:24:40,444] {logging_mixin.py:115} INFO - [2024-09-15 20:24:40,444] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:24:40,463] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.601 seconds
+[2024-09-15 20:24:50,578] {processor.py:153} INFO - Started process (PID=401) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:50,579] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:24:50,581] {logging_mixin.py:115} INFO - [2024-09-15 20:24:50,581] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:51,034] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:51,052] {logging_mixin.py:115} INFO - [2024-09-15 20:24:51,052] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:24:51,080] {logging_mixin.py:115} INFO - [2024-09-15 20:24:51,079] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:24:51,098] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.524 seconds
+[2024-09-15 20:24:52,168] {processor.py:153} INFO - Started process (PID=407) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:52,170] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:24:52,171] {logging_mixin.py:115} INFO - [2024-09-15 20:24:52,171] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:52,708] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:24:52,731] {logging_mixin.py:115} INFO - [2024-09-15 20:24:52,731] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:24:52,753] {logging_mixin.py:115} INFO - [2024-09-15 20:24:52,753] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:24:52,796] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.632 seconds
+[2024-09-15 20:25:02,932] {processor.py:153} INFO - Started process (PID=413) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:02,933] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:25:02,935] {logging_mixin.py:115} INFO - [2024-09-15 20:25:02,935] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:03,399] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:03,416] {logging_mixin.py:115} INFO - [2024-09-15 20:25:03,416] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:25:03,434] {logging_mixin.py:115} INFO - [2024-09-15 20:25:03,434] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:25:03,450] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.520 seconds
+[2024-09-15 20:25:13,562] {processor.py:153} INFO - Started process (PID=419) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:13,564] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:25:13,565] {logging_mixin.py:115} INFO - [2024-09-15 20:25:13,565] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:13,983] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:14,001] {logging_mixin.py:115} INFO - [2024-09-15 20:25:14,001] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:25:14,019] {logging_mixin.py:115} INFO - [2024-09-15 20:25:14,019] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:25:14,035] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.477 seconds
+[2024-09-15 20:25:24,160] {processor.py:153} INFO - Started process (PID=425) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:24,162] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:25:24,163] {logging_mixin.py:115} INFO - [2024-09-15 20:25:24,163] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:24,656] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:24,682] {logging_mixin.py:115} INFO - [2024-09-15 20:25:24,682] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:25:24,707] {logging_mixin.py:115} INFO - [2024-09-15 20:25:24,707] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:25:24,726] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.571 seconds
+[2024-09-15 20:25:34,821] {processor.py:153} INFO - Started process (PID=431) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:34,821] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:25:34,822] {logging_mixin.py:115} INFO - [2024-09-15 20:25:34,822] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:35,390] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:35,417] {logging_mixin.py:115} INFO - [2024-09-15 20:25:35,417] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:25:35,438] {logging_mixin.py:115} INFO - [2024-09-15 20:25:35,438] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:25:35,459] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.641 seconds
+[2024-09-15 20:25:45,579] {processor.py:153} INFO - Started process (PID=437) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:45,580] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:25:45,581] {logging_mixin.py:115} INFO - [2024-09-15 20:25:45,581] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:46,026] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:46,044] {logging_mixin.py:115} INFO - [2024-09-15 20:25:46,044] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:25:46,065] {logging_mixin.py:115} INFO - [2024-09-15 20:25:46,065] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:25:46,081] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.505 seconds
+[2024-09-15 20:25:56,200] {processor.py:153} INFO - Started process (PID=443) to work on /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:56,201] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_clima.py for tasks to queue
+[2024-09-15 20:25:56,202] {logging_mixin.py:115} INFO - [2024-09-15 20:25:56,202] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:56,601] {processor.py:651} INFO - DAG(s) dict_keys(['dag_clima']) retrieved from /opt/airflow/dags/dag_clima.py
+[2024-09-15 20:25:56,621] {logging_mixin.py:115} INFO - [2024-09-15 20:25:56,621] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-09-15 20:25:56,641] {logging_mixin.py:115} INFO - [2024-09-15 20:25:56,640] {dag.py:2972} INFO - Setting next_dagrun for dag_clima to 2024-09-15T00:00:00+00:00, run_after=2024-09-16T00:00:00+00:00
+[2024-09-15 20:25:56,659] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_clima.py took 0.461 seconds
