@@ -20,7 +20,7 @@ def enviar_mail(**context):
     <html>
     <body>
         <p>Hola!</p>
-        <p>El proceso de extraccion y de carga a redshift ha sido realizado con exito</p>
+        <p>El proceso de extraccion y de carga a redshift ha sido realizado con exito tenes los datos en que sede jugar en la tabla </p>
     </body>
     </html>
     """
