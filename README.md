@@ -12,4 +12,4 @@ El proceso toma el archivo sedes lo validadcon la informacion del clima y dispon
 - Ejecutar el docker-compuse up
 - Ejecutar dag 
 - Validar informacion en redshit
-
+- "APIKEY_TIEMPO": "DoByeb8GtPsljK9J"

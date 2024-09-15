@@ -62,8 +62,11 @@ task_3 = PythonOperator(
     dag=BC_dag,
 )
 
-
+task_4 = PythonOperator(
+    task_id="enviar_mail",
+    python_callable=enviar_mail,
+)
 
 
 # Definicion orden de tareas
-task_1 >> task_2 >> task_3 
+task_1 >> task_2 >> task_3 >> task_4
