@@ -1,0 +1,29 @@
+[2024-09-15 17:49:47,863] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_clima.cargar_data manual__2024-09-15T17:49:42.795503+00:00 [queued]>
+[2024-09-15 17:49:47,875] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_clima.cargar_data manual__2024-09-15T17:49:42.795503+00:00 [queued]>
+[2024-09-15 17:49:47,876] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-15 17:49:47,877] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2024-09-15 17:49:47,878] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-15 17:49:47,894] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): cargar_data> on 2024-09-15 17:49:42.795503+00:00
+[2024-09-15 17:49:47,899] {standard_task_runner.py:52} INFO - Started process 2965 to run task
+[2024-09-15 17:49:47,904] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_clima', 'cargar_data', 'manual__2024-09-15T17:49:42.795503+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/dag_clima.py', '--cfg-path', '/tmp/tmpnz3v02bz', '--error-file', '/tmp/tmp5soohorv']
+[2024-09-15 17:49:47,906] {standard_task_runner.py:80} INFO - Job 55: Subtask cargar_data
+[2024-09-15 17:49:47,982] {task_command.py:371} INFO - Running <TaskInstance: dag_clima.cargar_data manual__2024-09-15T17:49:42.795503+00:00 [running]> on host 4abe27884306
+[2024-09-15 17:49:48,066] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=EmanuelGomez
+AIRFLOW_CTX_DAG_ID=dag_clima
+AIRFLOW_CTX_TASK_ID=cargar_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-15T17:49:42.795503+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-09-15T17:49:42.795503+00:00
+[2024-09-15 17:49:49,982] {logging_mixin.py:115} INFO - Conexión exitosa a Redshift
+[2024-09-15 17:49:50,587] {logging_mixin.py:115} INFO - Table emanuelrgomez19_coderhouse.clima_sede is ready.
+[2024-09-15 17:49:51,910] {logging_mixin.py:115} INFO - Conexión exitosa a Redshift
+[2024-09-15 17:49:52,514] {logging_mixin.py:115} INFO - Truncate table emanuelrgomez19_coderhouse.clima_sede.
+[2024-09-15 17:49:53,808] {logging_mixin.py:115} INFO - Conexión exitosa a Redshift
+[2024-09-15 17:49:54,449] {logging_mixin.py:115} INFO - Proceso terminado
+[2024-09-15 17:49:54,450] {python.py:173} INFO - Done. Returned value was: None
+[2024-09-15 17:49:54,469] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_clima, task_id=cargar_data, execution_date=20240915T174942, start_date=20240915T174947, end_date=20240915T174954
+[2024-09-15 17:49:54,505] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-09-15 17:49:54,535] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

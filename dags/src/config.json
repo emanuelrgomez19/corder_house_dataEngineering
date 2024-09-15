@@ -1,0 +1,9 @@
+{
+"APIKEY": "flLtIMFb3BKaZe4lDhwj_Y6Mbv7SKj7v",
+"APIKEY_TIEMPO": "DoByeb8GtPsljK9J",
+"HOST": "data-engineer-cluster.cyhh5bfevlmn.us-east-1.redshift.amazonaws.com",
+"PORT": 5439,
+"DATABASE": "data-engineer-database",
+"USER" : "emanuelrgomez19_coderhouse",
+"PASSWORD": "a8g67ckSJ8"
+}

@@ -1,0 +1,162 @@
+[2024-09-15 16:29:07,833] {processor.py:153} INFO - Started process (PID=174) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:07,834] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:29:07,835] {logging_mixin.py:115} INFO - [2024-09-15 16:29:07,835] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:09,025] {logging_mixin.py:115} INFO - [2024-09-15 16:29:09,011] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:29:09,029] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:09,047] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 1.216 seconds
+[2024-09-15 16:29:19,138] {processor.py:153} INFO - Started process (PID=180) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:19,139] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:29:19,141] {logging_mixin.py:115} INFO - [2024-09-15 16:29:19,141] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:19,691] {logging_mixin.py:115} INFO - [2024-09-15 16:29:19,679] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:29:19,694] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:19,713] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 0.578 seconds
+[2024-09-15 16:29:29,819] {processor.py:153} INFO - Started process (PID=186) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:29,820] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:29:29,821] {logging_mixin.py:115} INFO - [2024-09-15 16:29:29,821] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:30,329] {logging_mixin.py:115} INFO - [2024-09-15 16:29:30,306] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:29:30,334] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:30,355] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 0.539 seconds
+[2024-09-15 16:29:40,460] {processor.py:153} INFO - Started process (PID=192) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:40,461] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:29:40,462] {logging_mixin.py:115} INFO - [2024-09-15 16:29:40,462] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:40,998] {logging_mixin.py:115} INFO - [2024-09-15 16:29:40,976] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:29:41,002] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:41,024] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 0.568 seconds
+[2024-09-15 16:29:51,161] {processor.py:153} INFO - Started process (PID=198) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:51,163] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:29:51,164] {logging_mixin.py:115} INFO - [2024-09-15 16:29:51,164] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:51,756] {logging_mixin.py:115} INFO - [2024-09-15 16:29:51,731] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:29:51,761] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:29:51,786] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 0.628 seconds
+[2024-09-15 16:30:01,899] {processor.py:153} INFO - Started process (PID=204) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:01,900] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:30:01,901] {logging_mixin.py:115} INFO - [2024-09-15 16:30:01,901] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:02,434] {logging_mixin.py:115} INFO - [2024-09-15 16:30:02,430] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:30:02,435] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:02,456] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 0.560 seconds
+[2024-09-15 16:30:12,560] {processor.py:153} INFO - Started process (PID=210) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:12,561] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:30:12,562] {logging_mixin.py:115} INFO - [2024-09-15 16:30:12,562] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:13,048] {logging_mixin.py:115} INFO - [2024-09-15 16:30:13,040] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:30:13,049] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:13,064] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 0.507 seconds
+[2024-09-15 16:30:23,175] {processor.py:153} INFO - Started process (PID=216) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:23,176] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:30:23,177] {logging_mixin.py:115} INFO - [2024-09-15 16:30:23,177] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:23,697] {logging_mixin.py:115} INFO - [2024-09-15 16:30:23,679] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:30:23,699] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:23,716] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 0.544 seconds
+[2024-09-15 16:30:33,842] {processor.py:153} INFO - Started process (PID=222) to work on /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:33,843] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_acciones.py for tasks to queue
+[2024-09-15 16:30:33,844] {logging_mixin.py:115} INFO - [2024-09-15 16:30:33,844] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:34,271] {logging_mixin.py:115} INFO - [2024-09-15 16:30:34,267] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_acciones.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_acciones.py", line 18, in <module>
+    from src.transformar_data import transformar_data
+  File "/opt/airflow/dags/src/transformar_data.py", line 37, in <module>
+    transformar_data()
+  File "/opt/airflow/dags/src/transformar_data.py", line 20, in transformar_data
+    xcom_value = kwargs['ti'].xcom_pull(task_ids='extraer_data')
+KeyError: 'ti'
+[2024-09-15 16:30:34,273] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_acciones.py
+[2024-09-15 16:30:34,287] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_acciones.py took 0.449 seconds

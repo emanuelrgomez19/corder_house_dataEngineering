@@ -1,0 +1,113 @@
+[2024-09-15 16:38:51,734] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [queued]>
+[2024-09-15 16:38:51,745] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [queued]>
+[2024-09-15 16:38:51,746] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-15 16:38:51,746] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-09-15 16:38:51,748] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-15 16:38:51,762] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): cargar_data> on 2024-09-14 00:00:00+00:00
+[2024-09-15 16:38:51,767] {standard_task_runner.py:52} INFO - Started process 422 to run task
+[2024-09-15 16:38:51,770] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_clima', 'cargar_data', 'scheduled__2024-09-14T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/dag_clima.py', '--cfg-path', '/tmp/tmpgib56cra', '--error-file', '/tmp/tmp0ljwa6bl']
+[2024-09-15 16:38:51,772] {standard_task_runner.py:80} INFO - Job 12: Subtask cargar_data
+[2024-09-15 16:38:51,851] {task_command.py:371} INFO - Running <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [running]> on host 4abe27884306
+[2024-09-15 16:38:51,936] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=EmanuelGomez
+AIRFLOW_CTX_DAG_ID=dag_clima
+AIRFLOW_CTX_TASK_ID=cargar_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-14T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-09-14T00:00:00+00:00
+[2024-09-15 16:38:53,480] {logging_mixin.py:115} INFO - Conexión exitosa a Redshift
+[2024-09-15 16:38:53,496] {logging_mixin.py:115} INFO - {"time":{"0":"2024-09-15","1":"2024-09-16","2":"2024-09-17","3":"2024-09-18","4":"2024-09-19","5":"2024-09-20","6":"2024-09-21"},"temperature_max":{"0":17.38,"1":21.43,"2":21.58,"3":22.32,"4":21.59,"5":20.25,"6":21.1},"temperature_min":{"0":11.2,"1":11.73,"2":15.56,"3":15.83,"4":16.39,"5":13.61,"6":14.66},"precipitation":{"0":0.0,"1":0.0,"2":0.0,"3":0.0,"4":18.3,"5":0.0,"6":0.0},"sede1":{"0":"Devoto ","1":"Devoto ","2":"Devoto ","3":"Devoto ","4":"Almagro","5":"Devoto ","6":"Devoto "},"sede2":{"0":"Floresta","1":"Floresta","2":"Floresta","3":"Floresta","4":" Caballito","5":"Floresta","6":"Floresta"}}
+[2024-09-15 16:38:53,497] {logging_mixin.py:115} INFO - <connection object at 0x7f3457438ad0; dsn: 'user=emanuelrgomez19_coderhouse password=xxx dbname=data-engineer-database host=data-engineer-cluster.cyhh5bfevlmn.us-east-1.redshift.amazonaws.com port=5439', closed: 0>
+[2024-09-15 16:38:53,498] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/src/cargar_data.py", line 33, in cargar_data
+    df = pd.DataFrame(xcom_value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 730, in __init__
+    raise ValueError("DataFrame constructor not properly called!")
+ValueError: DataFrame constructor not properly called!
+[2024-09-15 16:38:53,523] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_clima, task_id=cargar_data, execution_date=20240914T000000, start_date=20240915T163851, end_date=20240915T163853
+[2024-09-15 16:38:53,540] {standard_task_runner.py:97} ERROR - Failed to execute job 12 for task cargar_data (DataFrame constructor not properly called!; 422)
+[2024-09-15 16:38:53,557] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-09-15 16:38:53,594] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-15 16:58:33,539] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [queued]>
+[2024-09-15 16:58:33,556] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [queued]>
+[2024-09-15 16:58:33,556] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-15 16:58:33,557] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-09-15 16:58:33,557] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-15 16:58:33,581] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): cargar_data> on 2024-09-14 00:00:00+00:00
+[2024-09-15 16:58:33,589] {standard_task_runner.py:52} INFO - Started process 1138 to run task
+[2024-09-15 16:58:33,593] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_clima', 'cargar_data', 'scheduled__2024-09-14T00:00:00+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/dag_clima.py', '--cfg-path', '/tmp/tmpehw5n2sk', '--error-file', '/tmp/tmpj_76ir96']
+[2024-09-15 16:58:33,596] {standard_task_runner.py:80} INFO - Job 28: Subtask cargar_data
+[2024-09-15 16:58:33,668] {task_command.py:371} INFO - Running <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [running]> on host 4abe27884306
+[2024-09-15 16:58:33,747] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=EmanuelGomez
+AIRFLOW_CTX_DAG_ID=dag_clima
+AIRFLOW_CTX_TASK_ID=cargar_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-14T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-09-14T00:00:00+00:00
+[2024-09-15 16:58:35,076] {logging_mixin.py:115} INFO - Conexión exitosa a Redshift
+[2024-09-15 16:58:35,094] {logging_mixin.py:115} INFO - {"time":{"0":"2024-09-15","1":"2024-09-16","2":"2024-09-17","3":"2024-09-18","4":"2024-09-19","5":"2024-09-20","6":"2024-09-21"},"temperature_max":{"0":17.38,"1":21.43,"2":21.58,"3":22.32,"4":21.59,"5":20.25,"6":21.1},"temperature_min":{"0":11.2,"1":11.73,"2":15.56,"3":15.83,"4":16.39,"5":13.61,"6":14.66},"precipitation":{"0":0.0,"1":0.0,"2":0.0,"3":0.0,"4":18.3,"5":0.0,"6":0.0},"sede1":{"0":"Devoto","1":"Devoto","2":"Devoto","3":"Devoto","4":"Almagro","5":"Devoto","6":"Devoto"},"sede2":{"0":"Floresta","1":"Floresta","2":"Floresta","3":"Floresta","4":"Caballito","5":"Floresta","6":"Floresta"}}
+[2024-09-15 16:58:35,095] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/src/cargar_data.py", line 33, in cargar_data
+    df = pd.DataFrame.to_json(xcom_value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2571, in to_json
+    storage_options=storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 111, in to_json
+    raise NotImplementedError("'obj' should be a Series or a DataFrame")
+NotImplementedError: 'obj' should be a Series or a DataFrame
+[2024-09-15 16:58:35,126] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_clima, task_id=cargar_data, execution_date=20240914T000000, start_date=20240915T165833, end_date=20240915T165835
+[2024-09-15 16:58:35,141] {standard_task_runner.py:97} ERROR - Failed to execute job 28 for task cargar_data ('obj' should be a Series or a DataFrame; 1138)
+[2024-09-15 16:58:35,175] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-09-15 16:58:35,215] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-15 17:00:53,242] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [queued]>
+[2024-09-15 17:00:53,251] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [queued]>
+[2024-09-15 17:00:53,252] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-15 17:00:53,253] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2024-09-15 17:00:53,254] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-15 17:00:53,268] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): cargar_data> on 2024-09-14 00:00:00+00:00
+[2024-09-15 17:00:53,274] {standard_task_runner.py:52} INFO - Started process 1240 to run task
+[2024-09-15 17:00:53,277] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_clima', 'cargar_data', 'scheduled__2024-09-14T00:00:00+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/dag_clima.py', '--cfg-path', '/tmp/tmpnxo12f0n', '--error-file', '/tmp/tmphssqouq8']
+[2024-09-15 17:00:53,279] {standard_task_runner.py:80} INFO - Job 34: Subtask cargar_data
+[2024-09-15 17:00:53,359] {task_command.py:371} INFO - Running <TaskInstance: dag_clima.cargar_data scheduled__2024-09-14T00:00:00+00:00 [running]> on host 4abe27884306
+[2024-09-15 17:00:53,448] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=EmanuelGomez
+AIRFLOW_CTX_DAG_ID=dag_clima
+AIRFLOW_CTX_TASK_ID=cargar_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-14T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-09-14T00:00:00+00:00
+[2024-09-15 17:00:54,712] {logging_mixin.py:115} INFO - Conexión exitosa a Redshift
+[2024-09-15 17:00:54,731] {logging_mixin.py:115} INFO - {"time":{"0":"2024-09-15","1":"2024-09-16","2":"2024-09-17","3":"2024-09-18","4":"2024-09-19","5":"2024-09-20","6":"2024-09-21"},"temperature_max":{"0":17.38,"1":21.43,"2":21.58,"3":22.32,"4":21.59,"5":20.25,"6":21.1},"temperature_min":{"0":11.2,"1":11.73,"2":15.56,"3":15.83,"4":16.39,"5":13.61,"6":14.66},"precipitation":{"0":0.0,"1":0.0,"2":0.0,"3":0.0,"4":18.3,"5":0.0,"6":0.0},"sede1":{"0":"Devoto","1":"Devoto","2":"Devoto","3":"Devoto","4":"Almagro","5":"Devoto","6":"Devoto"},"sede2":{"0":"Floresta","1":"Floresta","2":"Floresta","3":"Floresta","4":"Caballito","5":"Floresta","6":"Floresta"}}
+[2024-09-15 17:00:54,733] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/src/cargar_data.py", line 33, in cargar_data
+    df = pd.DataFrame.from_dict(xcom_value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 1593, in from_dict
+    return cls(data, index=index, columns=columns, dtype=dtype)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 730, in __init__
+    raise ValueError("DataFrame constructor not properly called!")
+ValueError: DataFrame constructor not properly called!
+[2024-09-15 17:00:54,759] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=dag_clima, task_id=cargar_data, execution_date=20240914T000000, start_date=20240915T170053, end_date=20240915T170054
+[2024-09-15 17:00:54,776] {standard_task_runner.py:97} ERROR - Failed to execute job 34 for task cargar_data (DataFrame constructor not properly called!; 1240)
+[2024-09-15 17:00:54,819] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-09-15 17:00:54,868] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
